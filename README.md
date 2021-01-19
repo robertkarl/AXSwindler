@@ -1,20 +1,12 @@
 # Preface: why this fork?
-This fork of the excellent Swindler by @tmandry is here for two reasons:
+This fork of the excellent Swindler by @tmandry is here for a few reasons:
 - Continue using cocoapods
 - Public access to the `axElement` property 
+- Embed `AXSwift` instead of using a submodule
 
-# Swindler
+# AXSwindler
 _A Swift window management library for macOS_
 
-[![Build Status](https://travis-ci.org/tmandry/Swindler.svg?branch=master)](https://travis-ci.org/tmandry/Swindler)
-[![Join the chat at https://gitter.im/tmandry/Swindler](https://badges.gitter.im/tmandry/Swindler.svg)](https://gitter.im/tmandry/Swindler?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-In the past few years, many developers formerly on Linux and Windows have migrated to Mac for their
-excellent hardware and UNIX-based OS that "just works".
-
-But along the way we gave up something dear to us: control over our desktop environment.
-
-**The goal of Swindler is to help us take back that control**, and give us the best of both worlds.
 
 ## What Swindler Does
 
@@ -151,50 +143,14 @@ like this:
 Currently these are logged because it's hard to determine if an app "should" fail
 (especially on timeouts). As long as things appear to be working, you can ignore them.
 
-## Project Status
-
-Swindler is in development and is in **alpha**. Here is the state of its major features:
-
-- Asynchronous property system: **100% complete**
-- Event system: **100% complete**
-- Window API: **90% complete**
-- Application API: **90% complete**
-- Screen API: **90% complete**
-- Spaces API: **0% complete**
-
-You can see the entire [planned API here](https://github.com/tmandry/Swindler/blob/master/API.swift).
-
-[API Documentation (latest release)](https://tmandry.github.io/Swindler/docs/latest)
-
-[API Documentation (master)](https://tmandry.github.io/Swindler/docs/master)
-
-## Development
-
-Swindler uses Cococapods for Dependency management.
-[Follow the instructions](https://guides.cocoapods.org/using/getting-started.html) to install Cocoapods.
-This should give you the `pod` command for use in the shell.
-
-Clone the project, then in your shell run:
-
-```
-$ cd Swindler
-$ git submodule init
-$ git submodule update
-$ pod install
-```
-
-At this point you should be able to build Swindler in Xcode and start on your way!
-
 ## Contact
 
 You can chat with us on [Gitter](https://gitter.im/tmandry/Swindler).
 
-Follow me on Twitter: [@tmandry](https://twitter.com/tmandry)
+Follow Tyler on Twitter: [@tmandry](https://twitter.com/tmandry)
 
 ## Related Projects
 
 - [Silica](https://github.com/ianyh/Silica)
 - [Mjolnir](https://github.com/sdegutis/mjolnir)
 - [Hammerspoon](https://github.com/Hammerspoon/hammerspoon), a fork of Mjolnir
-
-Swindler is built on [AXSwift](https://github.com/tmandry/AXSwift).
